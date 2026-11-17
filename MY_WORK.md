@@ -32,11 +32,11 @@
 
 | Field | Your Answer |
 |-------|-------------|
-| **Full Name** | [Write your full name here] |
-| **Student ID** | [Write your student ID here] |
-| **University Email** | [yourid]@std.psau.edu.sa |
-| **GitHub Username** | [your-github-username] |
-| **Repository Link** | [Paste your repository link here] |
+| **Full Name** | [renad gareb alajmi] |
+| **Student ID** | [445052072] |
+| **University Email** | 445052072@std.psau.edu.sa |
+| **GitHub Username** | [renad108] |
+| **Repository Link** | [https://github.com/renad108/OS-Assignment3-Renad-alajmi-] |
  
 ---
 
@@ -132,69 +132,90 @@
 
 ## Your Development Log
 
-### Entry 1 - [Date and Time]
+### Entry 1 - [November 14, 5pm]
 **What I did**:
-
+Set up my GitHub repository and ran the original Java program
 **Details**:
+Set up my GitHub repository and ran the original Java program.
+
+Details:
+Forked and renamed the repository.
+Changed the student ID to 445052072.
+Ran the original simulation with 18 processes and 4 CPUs.
+Observed IllegalThreadStateException and WATCHDOG.
+Created the first commit
 
 **Challenges**:
-
+ I had difficulty running Java in VS Code and understanding the errors
 **Solution**:
-
+I checked the Java installation, used the correct filename, and examined the output
 **Time spent**:
-
+30 min
 ---
 
-### Entry 2 - [Date and Time]
+### Entry 2 - [November 14 , 6 pm]
 **What I did**:
-
+Implemented Feature 1 using ReentrantLock
 **Details**:
-
+Added queueLock inside ReadyQueue.
+Protected add(), poll(), processOf(), and snapshot().
+Used try/finally to release the lock.
+Tested the feature five times and committed the changes.
 **Challenges**:
-
+I encountered missing closing braces while editing the methods
 **Solution**:
-
+I checked the braces, corrected their positions, and compiled the program again
 **Time spent**:
-
+1:30 hr
 ---
 
-### Entry 3 - [Date and Time]
+### Entry 3 - [November 14 ,9pm]
 **What I did**:
-
+Implemented Feature 2 to protect the shared statistics.
 **Details**:
-
+Added one ReentrantLock named statsLock.
+Protected the three update methods and three getters.
+Tested the program five times.
+Confirmed that the first three verification checks passed.
 **Challenges**:
-
+The shared counters previously produced incorrect results
 **Solution**:
-
+I protected their critical sections using lock() and try/finally
 **Time spent**:
-
+50 min
 ---
 
-### Entry 4 - [Date and Time]
+### Entry 4 - [November 14, 10:40]
 **What I did**:
-
+Implemented Feature 3 using a counting semaphore
 **Details**:
-
+Added a Semaphore initialized to zero.
+Used release() when adding a process.
+Used acquire() to replace busy waiting.
+Added a shutdown signal for waiting CPUs.
+Tested the final version five times and confirmed all verification checks passed.
 **Challenges**:
-
+ I needed to understand how waiting CPUs terminate after the final process finishes
 **Solution**:
-
+ I added signalShutdown() to wake the blocked CPUs
 **Time spent**:
-
+50 min
 ---
 
-### Entry 5 - [Date and Time]
+### Entry 5 - [November 17 ,8pm]
 **What I did**:
-
+Worked on the assignment documentation
 **Details**:
-
+Completed my student information in MY_WORK.md.
+Documented my development sessions.
+Reviewed the synchronization concepts used in my code.
+Prepared the reflection and technical answers using my actual test results
 **Challenges**:
-
+I needed to connect the theoretical concepts to the code I implemented
 **Solution**:
-
+I reviewed the original and final outputs and connected each synchronization concept to its corresponding method
 **Time spent**:
-
+2hr
 ---
 
 ### Entry 6 - [Optional - Date and Time]
